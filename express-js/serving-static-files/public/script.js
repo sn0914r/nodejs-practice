@@ -1,0 +1,1 @@
+console.log("iam a script file");
