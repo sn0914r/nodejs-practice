@@ -3,4 +3,3 @@ notes
 node_modules
 .env
 src/backend-topics/jwt
-src/backend-topics/input-validation-with-JOI
