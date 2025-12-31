@@ -3,4 +3,4 @@
     - [ ] CRUD (firestore)
     - [ ] Storage (for file uploads) [LAST]
     - [ ] Authentication
-[ ] multer 
+[x] multer 
