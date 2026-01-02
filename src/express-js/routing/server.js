@@ -73,33 +73,6 @@ app.get("/get/:id", (req, res) => {
   ------------------------------*/
 });
 
-/*================================================================================
-Task: Mini User API With Express
-
-Route 1: Get all users
-    * Read optional query: role
-    * If role exists → filter users
-    * Set header: X-Total-Users
-    * Send JSON response
-
-Route 2: Get user by ID
-    * Read id from req.params
-    * If user not found → 404
-    * Else → return user
-
-Route 3: Create new user
-    * Read name and role from req.body
-    * If missing → 400
-    * Add user to array
-    * Set a cookie: created=true
-    * Return 201 Created
-    
-Route 4: Health check
-    * Set response type to JSON
-    * Set header: X-App: Mini-API
-    * Return { status: "ok" }
-    
-================================================================================*/
 app.listen(PORT, (error) => {
   if (error) {
     console.log(error.message || "Failed to start the server");

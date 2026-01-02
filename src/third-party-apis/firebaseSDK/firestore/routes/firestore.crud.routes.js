@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const asyncErrorHandler = require("../../utils/asyncErrorHandler");
 
 // CREATE IMPORTS
 const {
@@ -26,18 +27,18 @@ const {
 // ======================================================================================================
 
 // CREATE - add & set methods
-router.post("/add", addResource);
-router.post("/set", setResoure);
+router.post("/add", asyncErrorHandler(addResource));
+router.post("/set", asyncErrorHandler(setResoure));
 
 // READ - get
-router.get("/get/:id", getSingleResource);
-router.get("/get", getAllResources);
+router.get("/get/:id", asyncErrorHandler(getSingleResource));
+router.get("/get", asyncErrorHandler(getAllResources));
 
 // UPDATE
-router.patch("/update/:id", updateResource);
+router.patch("/update/:id", asyncErrorHandler(updateResource));
 
 // DELETE
-router.delete("/delete/:id", deleteResource);
+router.delete("/delete/:id", asyncErrorHandler(deleteResource));
 
 // WILDCARD ROUTE
 router.use((req, res) => {

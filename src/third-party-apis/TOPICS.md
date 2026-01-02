@@ -1,6 +1,6 @@
 [x] Email Service (Nodemailer)
 [ ] firebase admin SDK
-    - [ ] CRUD (firestore)
+    - [x] CRUD (firestore)
     - [ ] Storage (for file uploads) [LAST]
     - [ ] Authentication
 [x] multer 
