@@ -1,4 +1,4 @@
-const { db } = require("../../config/firebase.config");
+const { db } = require("../../../config/firebase.config");
 const COLLECTION = process.env.FIREBASE_COLLECTION_NAME || "users";
 
 const getSingleResource = async (req, res, next) => {

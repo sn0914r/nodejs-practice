@@ -3,9 +3,9 @@ const globalErrorHandler = (err, req, res, next) => {
   const errorMsg = err.message || "Internal Server Error";
 
   res.status(statusCode).json({
-    success: false,
+    isSuccess: false,
     error: errorMsg,
   });
 };
 
-module.exports = globalErrorHandler
+module.exports = globalErrorHandler;

@@ -3,3 +3,4 @@ notes
 node_modules
 .env
 multer.md
+config.js
