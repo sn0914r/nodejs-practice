@@ -25,11 +25,15 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
     "firebase": "^12.7.0",
     "firebase-admin": "^13.6.0",
     "joi": "^18.0.2",
     "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.4",
     "multer": "^2.0.2",
-    "nodemailer": "^7.0.12"
+    "nodemailer": "^7.0.12",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
   }
 }
